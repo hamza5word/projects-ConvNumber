@@ -1,7 +1,4 @@
 // JavaScript Document
-
-var number, ask, continu='Y';
-
 function convertingENG(number){
 	
 	
@@ -241,30 +238,7 @@ function convertingFRA(number){
 	} 
 }
 	
-do{	
 
-number=parseInt(prompt("Input the number betwwen 0 and 999"));
-if(number<0 || number>999){
-	alert('Number between 0 and 999 !');
-}
-else if(isNaN(number)){
-	alert('This not a valid number');	
-}
-else{	
-ask = prompt("Which language : ENG or FRA ?");
-
-if(ask==='ENG'){
-	convertingENG(number);
-}
-else if(ask==='FRA'){
-	convertingFRA(number);
-}
-else{
-	alert("Language not yet supported");
-}
-continu=prompt("Want to do it again ? (Y/N)");
-}
-} while (continu!=='N');
 
 
 
